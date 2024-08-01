@@ -1,120 +1,53 @@
-# Patient Centered Information Exchange System
+Patient Centered Information Exchange System
+Overview
+The Patient Centered Information Exchange System is designed to facilitate secure and efficient communication between healthcare providers and patients. The system aims to enhance the quality of healthcare services by providing a streamlined platform for the exchange of medical information.
 
-## Overview
+Features
+Secure Information Exchange: Ensures that all patient information is exchanged over secure channels to maintain confidentiality.
+Patient Access: Allows patients to access their medical records and communicate with healthcare providers.
+Provider Collaboration: Enables healthcare providers to collaborate on patient care more effectively.
+Appointment Scheduling: Integrates an appointment scheduling system to manage consultations and follow-ups.
+Getting Started
+Prerequisites
+Before installation, ensure you have the following:
 
-The Patient Centered Information Exchange System is a healthcare application designed to facilitate secure and efficient sharing of patient information among healthcare providers and patients. This system aims to enhance the quality of care by providing accurate and timely access to patient records, enabling better diagnosis, treatment, and coordination among medical professionals.
+Python 3.x
+Django (or another suitable web framework)
+Database like PostgreSQL, MySQL
+Additional libraries and dependencies as specified in requirements.txt
+Installation
+Clone the Repository:
+bash
+Copy code
+git clone https://github.com/Kruthikasv/Patient_centered_information_exchange_system.git
+Navigate to the Project Directory:
+bash
+Copy code
+cd Patient_centered_information_exchange_system
+Install Required Libraries:
+Copy code
+pip install -r requirements.txt
+Configuration
+Modify the settings.py file within the Django project to set up your database configurations and other environment-specific settings.
 
-## Features
+Running the Application
+To launch the application, execute:
 
-- **User Authentication**: Secure login for patients, doctors, and administrators.
-- **Patient Records Management**: Store, update, and retrieve patient medical records.
-- **Appointment Scheduling**: Manage and schedule appointments between patients and healthcare providers.
-- **Secure Messaging**: Enable secure communication between patients and doctors.
-- **Data Encryption**: Ensure the privacy and security of patient information through encryption.
-- **Access Control**: Define and manage access levels for different users.
+Copy code
+python manage.py runserver
+This will start the Django development server, typically accessible via http://localhost:8000.
 
-## Technologies Used
+Usage
+Detail how to use the system, including how to log in, view medical records, schedule appointments, and use any other features. Include screenshots or video tutorials for better clarity.
 
-- **Backend**: Node.js, Express.js
-- **Frontend**: React.js
-- **Database**: MongoDB
-- **Authentication**: JSON Web Tokens (JWT)
-- **Encryption**: AES-256
+Contributing
+Contributions are encouraged. If you'd like to contribute, please follow these steps:
 
-## Installation
-
-### Prerequisites
-
-- Node.js
-- npm (Node Package Manager)
-- MongoDB
-
-### Steps
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Kruthikasv/Patient_centered_information_exchange_system.git
-   ```
-
-2. **Set Up Backend**
-   - Navigate to the backend directory.
-     ```bash
-     cd backend
-     ```
-   - Install dependencies.
-     ```bash
-     npm install
-     ```
-   - Configure environment variables in a `.env` file.
-     ```env
-     PORT=5000
-     MONGODB_URI=your_mongodb_uri
-     JWT_SECRET=your_jwt_secret
-     ```
-
-3. **Set Up Frontend**
-   - Navigate to the frontend directory.
-     ```bash
-     cd ../frontend
-     ```
-   - Install dependencies.
-     ```bash
-     npm install
-     ```
-
-4. **Run the Application**
-   - Start the backend server.
-     ```bash
-     cd ../backend
-     npm start
-     ```
-   - Start the frontend server.
-     ```bash
-     cd ../frontend
-     npm start
-     ```
-
-5. **Access the Application**
-   - Open your web browser and navigate to `http://localhost:3000`.
-
-## Usage
-
-### Patient Functions
-
-- **Register/Login**: Patients can register and log in using their credentials.
-- **View Records**: Access personal medical records.
-- **Schedule Appointments**: Book appointments with healthcare providers.
-- **Secure Messaging**: Communicate with doctors securely.
-
-### Doctor Functions
-
-- **Register/Login**: Doctors can register and log in using their credentials.
-- **Manage Appointments**: View and manage scheduled appointments.
-- **Access Patient Records**: Access and update patient medical records.
-- **Secure Messaging**: Communicate with patients securely.
-
-### Admin Functions
-
-- **Register/Login**: Admins can log in using their credentials.
-- **Manage Users**: Add, update, or delete user accounts (patients and doctors).
-- **Monitor System**: Oversee system operations and ensure data integrity.
-
-## Database Schema
-
-- **Users**: Stores user information (patients, doctors, and admins).
-- **Records**: Stores patient medical records.
-- **Appointments**: Stores appointment details.
-- **Messages**: Stores secure messages exchanged between users.
-
-## Contributions
-
-Contributions to the project are welcome. Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add your feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
+Fork the repository.
+Create a feature branch (git checkout -b my-new-feature).
+Commit your changes (git commit -am 'Add some feature').
+Push to the branch (git push origin my-new-feature).
+Submit a Pull Request.
 
 ## License
 
